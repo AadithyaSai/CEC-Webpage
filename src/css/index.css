@@ -1,0 +1,14 @@
+body {
+    padding-top: 140px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.carousel > .carousel-inner > .carousel-item > img{
+    width: auto;
+    height: 500px;
+    max-height: 500px;
+}
+
+#newsDiv {
+    padding-top: 2%;
+}
