@@ -1,151 +1,343 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
   <head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-      <title>College of Engineering, Chengannur</title>
-      <link rel="icon" type="image/png" href="src/assets/CEC Logo.png" />
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-      <link rel="stylesheet" href="src/css/index.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>College of Engineering, Chengannur</title>
+    <link rel="icon" type="image/png" href="src/assets/CEC Logo.png" />
+    <script
+      src="https://kit.fontawesome.com/f873f30408.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="src/js/index.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=IBM Plex Serif"
+    />
+    <link rel="stylesheet" href="src/css/index.css" />
+    <script
+      type="module"
+      src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"
+    ></script>
   </head>
-  <body>
+  <body data-bs-theme="dark">
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
       <div class="container-fluid">
         <a class="navbar-brand d-inline-flex align-items-center" href="#">
-          <img class="m-2" src="src/assets/CEC Logo.png" alt="College of Engineering Chengannur" width="50", height="50">
-          <p class="text-wrap">College of Engineering <br> Chengannur</p>
+          <img
+            class="me-3"
+            src="src/assets/CEC Logo.png"
+            alt="College of Engineering Chengannur"
+            width="70"
+            height="70"
+          />
+          <p class="text-wrap">
+            College of Engineering <br />
+            Chengannur
+          </p>
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ms-auto">
             <ul class="navbar-nav">
-              <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">Announcements</a></li>
+              <li class="nav-item">
+                <a href="index.html" class="nav-link active">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="announcements.html" class="nav-link">Announcements</a>
+              </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarEduDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarEduDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
                   Education
                 </a>
-                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarEduDropdown">
-                  <li><a class="dropdown-item" href="#">Courses</a></li>
-                  <li><a class="dropdown-item" href="#">Facilities</a></li>
-                  <li><a class="dropdown-item" href="#">Faculties</a></li>
+                <ul
+                  class="dropdown-menu dropdown-menu-dark"
+                  aria-labelledby="navbarEduDropdown"
+                >
+                  <li>
+                    <a class="dropdown-item" href="courses.html">Courses</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="facilities.html"
+                      >Facilities</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="faculties.html">Faculties</a>
+                  </li>
                 </ul>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarFollowDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Follow Us
-              </a>
-              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarFollowDropdown">
-                <li><a class="dropdown-item" href="#">Facebook</a></li>
-                <li><a class="dropdown-item" href="#">Instagram</a></li>
-                <li><a class="dropdown-item" href="#">Linkedin</a></li>
-              </ul>
-            </li>
-              <li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarFollowDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Follow Us
+                </a>
+                <ul
+                  class="dropdown-menu dropdown-menu-dark"
+                  aria-labelledby="navbarFollowDropdown"
+                >
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://www.facebook.com/CEConline/"
+                      target="_blank"
+                      ><i class="fa fa-solid fa-facebook me-2"></i> Facebook</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://www.instagram.com/cec_chengannur/"
+                      target="_blank"
+                      ><i class="fa fa-solid fa-instagram me-2"></i>Instagram</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://in.linkedin.com/school/college-of-engineering-chengannur/"
+                      target="_blank"
+                      ><i class="fa fa-solid fa-linkedin me-2"></i>Linkedin</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="contactUs.html" class="nav-link">Contact Us</a>
+              </li>
             </ul>
           </div>
         </div>
       </div>
-    </nav>  
-    
+    </nav>
+
     <div id="carouselDiv" class="container-fluid d-flex justify-content-center">
-      <div id="collegeCarousel" class="carousel slide col-lg-8" data-bs-ride="carousel">
+      <div
+        id="collegeCarousel"
+        class="carousel slide col-lg-10"
+        data-bs-ride="carousel"
+      >
         <div class="carousel-indicators">
-          <button type="button" data-bs-target="#collegeCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#collegeCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#collegeCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#collegeCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button
+            type="button"
+            data-bs-target="#collegeCarousel"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#collegeCarousel"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#collegeCarousel"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#collegeCarousel"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="5000">
-            <img src="src/assets/CEC Main Entrance.jpeg" class="d-block w-100" alt="College of Engineering Chengannur">
+            <img
+              src="src/assets/CEC Main Entrance.jpeg"
+              class="d-block w-100"
+              alt="College of Engineering Chengannur"
+            />
           </div>
           <div class="carousel-item" data-bs-interval="5000">
-            <img src="src/assets/Tharang Banner.png" class="d-block w-100" alt="IHRD Tharang 2023">
+            <img
+              src="src/assets/Tharang Banner.png"
+              class="d-block w-100"
+              alt="IHRD Tharang 2023"
+            />
           </div>
           <div class="carousel-item" data-bs-interval="5000">
-            <img src="src/assets/Placements.jpg" class="d-block w-100" alt="CEC Placements">
+            <img
+              src="src/assets/Placements.jpg"
+              class="d-block w-100"
+              alt="CEC Placements"
+            />
           </div>
           <div class="carousel-item" data-bs-interval="5000">
-            <img src="src/assets/CEC Brochure.png" class="d-block w-100" alt="CEC Brochure">
+            <img
+              src="src/assets/CEC Brochure.png"
+              class="d-block w-100"
+              alt="CEC Brochure"
+            />
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#collegeCarousel" data-bs-slide="prev">
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#collegeCarousel"
+          data-bs-slide="prev"
+        >
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#collegeCarousel" data-bs-slide="next">
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#collegeCarousel"
+          data-bs-slide="next"
+        >
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
       </div>
     </div>
 
-    <div id="newsDiv" class="container-fluid ">
+    <div id="newsDiv" class="container-fluid">
       <div class="d-flex justify-content-center">
-        <span class="h3">News</span>
+        <span class="h3 mb-4 fw-bolder">News</span>
       </div>
-      <div class="row g-0 d-flex justify-content-center">
-        <div class="card mb-3 col-md-9">
+      <div class="row g-3 d-flex justify-content-center">
+        <div class="card m-1 col-md-6">
           <div class="row g-0">
-            <div class="col-md-4">
-              <img src="src/assets/Covid 2020.jpg" class="img-fluid rounded-start" alt="Corona Battalion">
+            <div class="col-md-4 mt-auto mb-auto">
+              <img
+                src="src/assets/Covid 2020(new).jpg"
+                class="img-fluid rounded-2"
+                alt="Corona Battalion"
+              />
             </div>
             <div class="col-md-8">
               <div class="card-body">
-                <h4 class="card-title">Corona Battalion: Student curates a system to aid the fight against the virus</h5>
-                <p class="card-text">With the covid-19 virus gripping the nation tighter day by day, Aswin Mohan, a 4th-year student of CEC took the challenge of developing a fully-fledged system for officials and organizations to track virus cases and keep tabs on those under inspection. The system which alleviates the pressure on health officials was swiftly adopted by the government to aid in its fight against the virus. </p>
-                <p class="card-text"><small class="text-muted">Last updated March 24, 2020</small></p>
+                <h4 class="card-title fw-bold">
+                  Corona Battalion: Student curates a system to aid the fight
+                  against the virus
+                </h4>
+                <p class="card-text">
+                  With the covid-19 virus gripping the nation tighter day by
+                  day, Aswin Mohan, a 4th-year student of CEC took the challenge
+                  of developing a fully-fledged system for officials and
+                  organizations to track virus cases and keep tabs on those
+                  under inspection. The system which alleviates the pressure...
+                </p>
+                <p class="card-text">
+                  <small class="text-muted">Last updated March 24, 2020</small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card m-1 col-md-4">
+          <div class="row g-0">
+            <div class="col-md-4 mt-auto mb-auto">
+              <img
+                src="src/assets/Ashwa 2019.jpg"
+                class="img-fluid rounded-2"
+                alt="Ashwa 2019"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Ashwa 2019</h5>
+                <p class="card-text">
+                  Ashwa is the college's biggest and the most vibrant Sports
+                  Meet, providing a great opportunity for students to unite,
+                  rejoice and represent themselves. It provides one of the
+                  finest chances to inculcate oneself with oodles of power,
+                  self-confidence and winning spirit...
+                </p>
+                <p class="card-text">
+                  <small class="text-muted"
+                    >Last updated February 12, 2019</small
+                  >
+                </p>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="">
-        <div class="row g-0 d-flex justify-content-center">
-          <div class="card mb-3 col-md-3">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="src/assets/Ashwa 2019.jpg" class="img-fluid rounded-start" alt="Ashwa 2019">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">Ashwa 2019</h5>
-                  <p class="card-text">Ashwa is the college's biggest and the most vibrant Sports Meet, providing a great opportunity for students to unite, rejoice and...</p>
-                  <p class="card-text"><small class="text-muted">Last updated February 12, 2019</small></p>
-                </div>
+      <div class="row g-3 d-flex justify-content-center">
+        <div class="card m-1 mt-3 col-md-5">
+          <div class="row g-0">
+            <div class="col-md-4 mt-auto mb-auto">
+              <img
+                src="src/assets/Summit 2019.jpg"
+                class="img-fluid rounded-2"
+                alt="Summit 19"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">SUMMIT'19</h5>
+                <p class="card-text">
+                  With an aroma of indispensable positivity and ceremonious
+                  gratitude, CEC opened itself to the grandeur of its maiden
+                  techno-cultural fiesta: SUMMIT, on the 29th, 30th, and 31st
+                  of...
+                </p>
+                <p class="card-text">
+                  <small class="text-muted"
+                    >Last updated February 12, 2019</small
+                  >
+                </p>
               </div>
             </div>
           </div>
-          <div class="card mb-3 col-md-3">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="src/assets/Summit 2019.jpg" class="img-fluid rounded-start" alt="Summit 19">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">SUMMIT'19</h5>
-                  <p class="card-text">With an aroma of positivity and ceremonious gratitude, CEC opened itself to the grandeur of its maiden techno-cultural fiesta: SUMMIT...</p>
-                  <p class="card-text"><small class="text-muted">Last updated February 12, 2019</small></p>
-                </div>
-              </div>
+        </div>
+        <div class="card m-1 mt-3 col-md-5">
+          <div class="row g-0">
+            <div class="col-md-4 mt-auto mb-auto">
+              <img
+                src="src/assets/Ignite 2012.jpg"
+                class="img-fluid rounded-2"
+                alt="Ignite 2012"
+              />
             </div>
-          </div>
-          <div class="card mb-3 col-md-3">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="src/assets/Ignite 2012.jpg" class="img-fluid rounded-start" alt="Ignite 2012">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">Ignite 2019</h5>
-                  <p class="card-text">The most remarkable event in the history of CEC is none other than the arrival of Dr. APJ Abdul Kalam. Whenever we hear that name...</p>
-                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Ignite 2012</h5>
+                <p class="card-text">
+                  The most remarkable event in the history of CEC is none other
+                  than the arrival of Dr. APJ Abdul Kalam. Whenever we hear that
+                  name, an indomitable spirit will burn within us to catch the
+                  dreams breaking the shackles of obstacles...
+                </p>
+                <p class="card-text">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </p>
               </div>
             </div>
           </div>
@@ -153,7 +345,249 @@
       </div>
     </div>
 
+    <div id="campusDiv" class="container-fluid col-md-8 justify-content-center">
+      <div
+        class="d-block d-xl-flex mt-3 justify-content-around align-content-center"
+      >
+        <div class="mt-auto me-3 mb-auto col-xl-6">
+          <span class="h3 fw-bolder">About us</span>
+          <p class="mt-4">
+            The College of Engineering Chengannur
+            <span class="fst-italic">(CEC)</span>, was established by the
+            Government of Kerala under the aegis of the
+            <span class="fst-italic">IHRD</span>, in the year 1993. It has been
+            approved by
+            <span class="fst-italic">
+              All India Council for Technical Education (AICTE)
+            </span>
+            and affiliated to
+            <span class="fst-italic">
+              APJ Abdul Kalam Technological University (KTU) </span
+            >. Ever since its inception, the college has maintained its eminence
+            as a leading engineering college in Kerala. Being located in
+            Chengannur town, Alleppey district the college has got access to all
+            means of transport, communication and lodging facilities.
+          </p>
+          <div class="accordion" id="visionMission">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#Vision"
+                  aria-expanded="false"
+                  aria-controls="Vision"
+                >
+                  <span class="fw-bold">Vision</span>
+                </button>
+              </h2>
+              <div
+                id="Vision"
+                class="accordion-collapse collapse"
+                data-bs-parent="#visionMission"
+              >
+                <div class="accordion-body">
+                  To emerge as an institution of excellence that imparts
+                  knowledge through education, learning, and research for the
+                  inclusive development of society
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#Mission"
+                  aria-expanded="false"
+                  aria-controls="Mission"
+                >
+                  <span class="fw-bold">Mission</span>
+                </button>
+              </h2>
+              <div
+                id="Mission"
+                class="accordion-collapse collapse"
+                data-bs-parent="#visionMission"
+              >
+                <div class="accordion-body">
+                  <ul>
+                    <li>
+                      To impart engineering education that enables the students
+                      to design, develop and maintain systems, products and
+                      process for the society utilizing the evolving technology.
+                    </li>
+                    <li>
+                      To orient the students for professional success, critical
+                      thinking and equity.
+                    </li>
+                    <li>
+                      To inculcate the students with entrepreneurial skills,
+                      ethical and social values.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <model-viewer
+          id="campusModel"
+          class="col-xl-6 me-auto ms-auto"
+          ar
+          ar-modes="webxr"
+          camera-controls
+          camera-orbit="-90deg 60deg 3m"
+          touch-action="pan-y"
+          src="src/assets/CEC NEW.gltf"
+          poster="src/assets/CEC Logo.png"
+          shadow-intensity="1"
+          alt="A 3D model of CEC."
+        >
+          <button
+            class="hotspot"
+            slot="hotspot-main-entrance"
+            data-position="13 1.75 0"
+            data-orbit="-90deg 60deg 1m"
+            data-target="0 0 0"
+          ></button>
+        </model-viewer>
+      </div>
+    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <div id="coursesDiv" class="container-fluid col-md-9">
+      <h3 class="fw-bolder text-decoration-underline mb-5">Courses Offered</h3>
+      <h4 class="fw-bold text-center">Undergraduate Courses</h4>
+      <div class="container d-block d-md-flex g-0 justify-content-around">
+        <div class="card col-12 col-md-4 m-2">
+          <div class="card-body">
+            <div class="card-text text-center">
+              <i class="fa fa-computer fa-4x"></i>
+              <br />
+              <strong class="h4"
+                >Computer Science & Engineering <br />
+                &emsp;</strong
+              >
+              <h6 class="mb-2 text-muted">~120 seats</h6>
+              <a href="courses.html" class="card-link">Know More</a>
+            </div>
+          </div>
+        </div>
+        <div class="card col-12 col-md-4 m-2">
+          <div class="card-body">
+            <div class="card-text text-center">
+              <i class="fa fa-bolt fa-4x"></i>
+              <br />
+              <strong class="h4"
+                >Electronics and Communication Engineering</strong
+              >
+              <h6 class="mb-2 text-muted">~120 seats</h6>
+              <a href="courses.html" class="card-link">Know More</a>
+            </div>
+          </div>
+        </div>
+        <div class="card col-12 col-md-4 m-2">
+          <div class="card-body">
+            <div class="card-text text-center">
+              <i class="fa fa-lightbulb fa-4x"></i>
+              <br />
+              <strong class="h4">Electrical and Electronics Engineering</strong>
+              <h6 class="mb-2 text-muted">~120 seats</h6>
+              <a href="courses.html" class="card-link">Know More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h4 class="fw-bold mt-3 text-center">Postgraduate Courses</h4>
+      <div class="container d-block d-md-flex g-0 justify-content-around">
+        <div class="card col-12 col-md-4 m-2">
+          <div class="card-body">
+            <div class="card-text text-center">
+              <i class="fa fa-plug-circle-bolt fa-4x"></i>
+              <br />
+              <strong class="h4"
+                >M.Tech in Electronics with Specialization in VLSI & Embedded
+                System</strong
+              >
+              <h6 class="mb-2 text-muted">~18 seats</h6>
+              <a href="courses.html" class="card-link">Know More</a>
+            </div>
+          </div>
+        </div>
+        <div class="card col-12 col-md-4 m-2">
+          <div class="card-body">
+            <div class="card-text text-center">
+              <i class="fa fa-desktop fa-4x"></i>
+              <br />
+              <strong class="h4"
+                >M.Tech in Computer Science - Specialization in Image
+                Processing</strong
+              >
+              <h6 class="mb-2 text-muted">~18 seats</h6>
+              <a href="courses.html" class="card-link">Know More</a>
+            </div>
+          </div>
+        </div>
+        <div class="card col-12 col-md-4 m-2">
+          <div class="card-body">
+            <div class="card-text text-center">
+              <i class="fa fa-laptop fa-4x"></i>
+              <br />
+              <strong class="h4"
+                >Master of Computer Applications (MCA) <br />
+                &emsp;
+              </strong>
+              <h6 class="mb-2 text-muted">~60 seats</h6>
+              <a href="courses.html" class="card-link">Know More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="text-center text-lg-start bg-dark text-white-50">
+      <section class="">
+        <div class="container text-center mt-5 pt-3">
+          <div class="row mt-3">
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+              <p>
+                <i class="fa fa-solid fa-envelope m-1"></i
+                >principal@ceconline.edu
+              </p>
+              <p><i class="fa fa-soild fa-phone m-1"></i>+91-479-2454125</p>
+            </div>
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <div class="container-fluid d-flex">
+                <img
+                  src="src/assets/CEC Logo White.png"
+                  alt="College of Engineering Chengannur"
+                  class="me-auto ms-auto"
+                  height="70"
+                  width="70"
+                />
+              </div>
+              <p>
+                College of Engineering Chengannur Chengannur P.O. Alapuzha
+                District
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div
+        class="text-center p-2"
+        style="background-color: rgba(0, 0, 0, 0.05)"
+      >
+        © 2023 Copyright: Aadithya Sai G Menon
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
